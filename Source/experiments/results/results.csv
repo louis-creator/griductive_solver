@@ -1,0 +1,11 @@
+puzzle_id,grid_size,primary_variables,auxiliary_variables,cnf_clauses,sat_calls,decisions,propagations,backtracks,deduction_steps,solver_runtime_seconds,total_runtime_seconds,final_status
+3x3_binary_01,3,9,0,17,24,0,132,0,8,0.001162,0.0023357,SOLVED
+3x3_counting_01,3,9,0,14,24,0,132,0,8,0.0011226,0.0028076,SOLVED
+3x3_dpll_showcase_01,3,9,0,10,21,1,129,1,7,0.0009559,0.0019615,SOLVED
+3x3_easy_01,3,9,0,10,24,0,132,0,8,0.0007954,0.0019033,SOLVED
+3x3_extensions_01,3,9,0,17,24,0,132,0,8,0.0011177,0.0024418,SOLVED
+3x3_mixed_01,3,9,0,15,24,0,132,0,8,0.0009815,0.0021083,SOLVED
+4x4_counting_01,4,16,0,27,45,0,405,0,15,0.0036848,0.0074604,SOLVED
+4x4_easy_01,4,16,0,17,45,0,405,0,15,0.0022474,0.0046581,SOLVED
+4x4_medium_01,4,16,0,31,45,0,405,0,15,0.0040551,0.0073554,SOLVED
+4x4_mixed_01,4,16,0,29,45,0,405,0,15,0.0037518,0.0072741,SOLVED

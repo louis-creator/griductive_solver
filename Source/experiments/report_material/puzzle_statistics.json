@@ -1,0 +1,10 @@
+{
+  "puzzles": 10,
+  "all_solved": true,
+  "sizes": [
+    3,
+    4
+  ],
+  "total_sat_calls": 321,
+  "total_deduction_steps": 107
+}

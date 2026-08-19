@@ -1,0 +1,123 @@
+{
+  "id": "3x3_easy_01",
+  "title": "Easy Investigation",
+  "size": 3,
+  "characters": [
+    {
+      "cell": "A1",
+      "name": "Avery",
+      "profession": "Architect",
+      "status": "CRIMINAL",
+      "clue": {
+        "type": "FACT",
+        "target": "B1",
+        "status": "INNOCENT"
+      }
+    },
+    {
+      "cell": "B1",
+      "name": "Blake",
+      "profession": "Baker",
+      "status": "INNOCENT",
+      "clue": {
+        "type": "FACT",
+        "target": "C1",
+        "status": "CRIMINAL"
+      }
+    },
+    {
+      "cell": "C1",
+      "name": "Casey",
+      "profession": "Chemist",
+      "status": "CRIMINAL",
+      "clue": {
+        "type": "FACT",
+        "target": "A2",
+        "status": "INNOCENT"
+      }
+    },
+    {
+      "cell": "A2",
+      "name": "Devon",
+      "profession": "Doctor",
+      "status": "INNOCENT",
+      "clue": {
+        "type": "FACT",
+        "target": "B2",
+        "status": "INNOCENT"
+      }
+    },
+    {
+      "cell": "B2",
+      "name": "Emery",
+      "profession": "Engineer",
+      "status": "INNOCENT",
+      "clue": {
+        "type": "FACT",
+        "target": "C2",
+        "status": "CRIMINAL"
+      }
+    },
+    {
+      "cell": "C2",
+      "name": "Finley",
+      "profession": "Florist",
+      "status": "CRIMINAL",
+      "clue": {
+        "type": "FACT",
+        "target": "A3",
+        "status": "INNOCENT"
+      }
+    },
+    {
+      "cell": "A3",
+      "name": "Gray",
+      "profession": "Guide",
+      "status": "INNOCENT",
+      "clue": {
+        "type": "FACT",
+        "target": "B3",
+        "status": "CRIMINAL"
+      }
+    },
+    {
+      "cell": "B3",
+      "name": "Harper",
+      "profession": "Historian",
+      "status": "CRIMINAL",
+      "clue": {
+        "type": "FACT",
+        "target": "C3",
+        "status": "CRIMINAL"
+      }
+    },
+    {
+      "cell": "C3",
+      "name": "Indigo",
+      "profession": "Illustrator",
+      "status": "CRIMINAL",
+      "clue": {
+        "type": "EXACTLY",
+        "k": 1,
+        "region": {
+          "type": "INTERSECTION",
+          "regions": [
+            {
+              "type": "BOUNDARY"
+            },
+            {
+              "type": "EXPLICIT",
+              "cells": [
+                "A1",
+                "B1"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "initially_revealed": [
+    "A1"
+  ]
+}

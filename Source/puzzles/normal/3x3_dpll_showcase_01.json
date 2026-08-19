@@ -1,0 +1,116 @@
+{
+  "id": "3x3_dpll_showcase_01",
+  "title": "DPLL Backtracking Lab",
+  "size": 3,
+  "characters": [
+    {
+      "cell": "A1",
+      "name": "Avery",
+      "profession": "Architect",
+      "status": "CRIMINAL",
+      "clue": {
+        "type": "SAME",
+        "target": "B1",
+        "other": "C1"
+      }
+    },
+    {
+      "cell": "B1",
+      "name": "Blake",
+      "profession": "Baker",
+      "status": "INNOCENT",
+      "clue": {
+        "type": "FACT",
+        "target": "A1",
+        "status": "CRIMINAL"
+      }
+    },
+    {
+      "cell": "C1",
+      "name": "Casey",
+      "profession": "Chemist",
+      "status": "INNOCENT",
+      "clue": {
+        "type": "FACT",
+        "target": "A2",
+        "status": "CRIMINAL"
+      }
+    },
+    {
+      "cell": "A2",
+      "name": "Devon",
+      "profession": "Doctor",
+      "status": "CRIMINAL",
+      "clue": {
+        "type": "FACT",
+        "target": "B2",
+        "status": "CRIMINAL"
+      }
+    },
+    {
+      "cell": "B2",
+      "name": "Emery",
+      "profession": "Engineer",
+      "status": "CRIMINAL",
+      "clue": {
+        "type": "FACT",
+        "target": "C2",
+        "status": "INNOCENT"
+      }
+    },
+    {
+      "cell": "C2",
+      "name": "Finley",
+      "profession": "Florist",
+      "status": "INNOCENT",
+      "clue": {
+        "type": "FACT",
+        "target": "B3",
+        "status": "CRIMINAL"
+      }
+    },
+    {
+      "cell": "A3",
+      "name": "Gray",
+      "profession": "Guide",
+      "status": "INNOCENT",
+      "clue": {
+        "type": "AT_MOST",
+        "k": 1,
+        "region": {
+          "type": "EXPLICIT",
+          "cells": [
+            "B1",
+            "C1"
+          ]
+        }
+      }
+    },
+    {
+      "cell": "B3",
+      "name": "Harper",
+      "profession": "Historian",
+      "status": "CRIMINAL",
+      "clue": {
+        "type": "FACT",
+        "target": "C3",
+        "status": "INNOCENT"
+      }
+    },
+    {
+      "cell": "C3",
+      "name": "Indigo",
+      "profession": "Illustrator",
+      "status": "INNOCENT",
+      "clue": {
+        "type": "FACT",
+        "target": "A3",
+        "status": "INNOCENT"
+      }
+    }
+  ],
+  "initially_revealed": [
+    "A1",
+    "A3"
+  ]
+}

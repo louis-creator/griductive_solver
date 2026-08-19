@@ -1,0 +1,4 @@
+# Runtime uses only the Python 3.11+ standard library (including tkinter).
+# pytest is listed so evaluators can run the supplied verification suite.
+pytest>=8.0
+

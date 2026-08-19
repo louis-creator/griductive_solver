@@ -1,0 +1,54 @@
+{
+  "id": "fixture_non_unique",
+  "title": "Non-unique Fixture",
+  "size": 2,
+  "characters": [
+    {
+      "cell": "A1",
+      "name": "Avery",
+      "profession": "Architect",
+      "status": "CRIMINAL",
+      "clue": {
+        "type": "SAME",
+        "target": "A1",
+        "other": "B1"
+      }
+    },
+    {
+      "cell": "B1",
+      "name": "Blake",
+      "profession": "Baker",
+      "status": "INNOCENT",
+      "clue": {
+        "type": "SAME",
+        "target": "A1",
+        "other": "B1"
+      }
+    },
+    {
+      "cell": "A2",
+      "name": "Casey",
+      "profession": "Chemist",
+      "status": "CRIMINAL",
+      "clue": {
+        "type": "SAME",
+        "target": "A1",
+        "other": "B1"
+      }
+    },
+    {
+      "cell": "B2",
+      "name": "Devon",
+      "profession": "Doctor",
+      "status": "INNOCENT",
+      "clue": {
+        "type": "SAME",
+        "target": "A1",
+        "other": "B1"
+      }
+    }
+  ],
+  "initially_revealed": [
+    "A1"
+  ]
+}

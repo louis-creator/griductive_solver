@@ -1,0 +1,147 @@
+{
+  "id": "3x3_extensions_01",
+  "title": "Parity Patrol",
+  "size": 3,
+  "characters": [
+    {
+      "cell": "A1",
+      "name": "Avery",
+      "profession": "Architect",
+      "status": "CRIMINAL",
+      "clue": {
+        "type": "PARITY",
+        "parity": "ODD",
+        "region": {
+          "type": "EXPLICIT",
+          "cells": [
+            "A1",
+            "B1"
+          ]
+        }
+      }
+    },
+    {
+      "cell": "B1",
+      "name": "Blake",
+      "profession": "Baker",
+      "status": "INNOCENT",
+      "clue": {
+        "type": "SAME",
+        "target": "B1",
+        "other": "C1"
+      }
+    },
+    {
+      "cell": "C1",
+      "name": "Casey",
+      "profession": "Chemist",
+      "status": "INNOCENT",
+      "clue": {
+        "type": "PARITY",
+        "parity": "ODD",
+        "region": {
+          "type": "EXPLICIT",
+          "cells": [
+            "C1",
+            "A2"
+          ]
+        }
+      }
+    },
+    {
+      "cell": "A2",
+      "name": "Devon",
+      "profession": "Doctor",
+      "status": "CRIMINAL",
+      "clue": {
+        "type": "SAME",
+        "target": "A2",
+        "other": "B2"
+      }
+    },
+    {
+      "cell": "B2",
+      "name": "Emery",
+      "profession": "Engineer",
+      "status": "CRIMINAL",
+      "clue": {
+        "type": "PARITY",
+        "parity": "EVEN",
+        "region": {
+          "type": "EXPLICIT",
+          "cells": [
+            "B2",
+            "C2"
+          ]
+        }
+      }
+    },
+    {
+      "cell": "C2",
+      "name": "Finley",
+      "profession": "Florist",
+      "status": "CRIMINAL",
+      "clue": {
+        "type": "DIFFERENT",
+        "target": "C2",
+        "other": "A3"
+      }
+    },
+    {
+      "cell": "A3",
+      "name": "Gray",
+      "profession": "Guide",
+      "status": "INNOCENT",
+      "clue": {
+        "type": "PARITY",
+        "parity": "ODD",
+        "region": {
+          "type": "EXPLICIT",
+          "cells": [
+            "A3",
+            "B3"
+          ]
+        }
+      }
+    },
+    {
+      "cell": "B3",
+      "name": "Harper",
+      "profession": "Historian",
+      "status": "CRIMINAL",
+      "clue": {
+        "type": "EXACTLY",
+        "k": 1,
+        "region": {
+          "type": "INTERSECTION",
+          "regions": [
+            {
+              "type": "BOUNDARY"
+            },
+            {
+              "type": "EXPLICIT",
+              "cells": [
+                "B3",
+                "C3"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cell": "C3",
+      "name": "Indigo",
+      "profession": "Illustrator",
+      "status": "INNOCENT",
+      "clue": {
+        "type": "FACT",
+        "target": "A1",
+        "status": "CRIMINAL"
+      }
+    }
+  ],
+  "initially_revealed": [
+    "A1"
+  ]
+}

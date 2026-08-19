@@ -1,0 +1,9 @@
+{
+  "AT_LEAST": 9,
+  "AT_MOST": 6,
+  "DIFFERENT": 15,
+  "EXACTLY": 34,
+  "FACT": 38,
+  "PARITY": 7,
+  "SAME": 9
+}

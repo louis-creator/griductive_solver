@@ -1,0 +1,242 @@
+{
+  "id": "4x4_medium_01",
+  "title": "Sixteen Suspects",
+  "size": 4,
+  "characters": [
+    {
+      "cell": "A1",
+      "name": "Avery",
+      "profession": "Architect",
+      "status": "CRIMINAL",
+      "clue": {
+        "type": "SAME",
+        "target": "A1",
+        "other": "B1"
+      }
+    },
+    {
+      "cell": "B1",
+      "name": "Blake",
+      "profession": "Baker",
+      "status": "CRIMINAL",
+      "clue": {
+        "type": "EXACTLY",
+        "k": 1,
+        "region": {
+          "type": "EXPLICIT",
+          "cells": [
+            "B1",
+            "C1"
+          ]
+        }
+      }
+    },
+    {
+      "cell": "C1",
+      "name": "Casey",
+      "profession": "Chemist",
+      "status": "INNOCENT",
+      "clue": {
+        "type": "DIFFERENT",
+        "target": "C1",
+        "other": "D1"
+      }
+    },
+    {
+      "cell": "D1",
+      "name": "Devon",
+      "profession": "Doctor",
+      "status": "CRIMINAL",
+      "clue": {
+        "type": "EXACTLY",
+        "k": 1,
+        "region": {
+          "type": "EXPLICIT",
+          "cells": [
+            "D1",
+            "A2"
+          ]
+        }
+      }
+    },
+    {
+      "cell": "A2",
+      "name": "Emery",
+      "profession": "Engineer",
+      "status": "INNOCENT",
+      "clue": {
+        "type": "SAME",
+        "target": "A2",
+        "other": "B2"
+      }
+    },
+    {
+      "cell": "B2",
+      "name": "Finley",
+      "profession": "Florist",
+      "status": "INNOCENT",
+      "clue": {
+        "type": "EXACTLY",
+        "k": 1,
+        "region": {
+          "type": "EXPLICIT",
+          "cells": [
+            "B2",
+            "C2"
+          ]
+        }
+      }
+    },
+    {
+      "cell": "C2",
+      "name": "Gray",
+      "profession": "Guide",
+      "status": "CRIMINAL",
+      "clue": {
+        "type": "DIFFERENT",
+        "target": "C2",
+        "other": "D2"
+      }
+    },
+    {
+      "cell": "D2",
+      "name": "Harper",
+      "profession": "Historian",
+      "status": "INNOCENT",
+      "clue": {
+        "type": "EXACTLY",
+        "k": 1,
+        "region": {
+          "type": "EXPLICIT",
+          "cells": [
+            "D2",
+            "A3"
+          ]
+        }
+      }
+    },
+    {
+      "cell": "A3",
+      "name": "Indigo",
+      "profession": "Illustrator",
+      "status": "CRIMINAL",
+      "clue": {
+        "type": "SAME",
+        "target": "A3",
+        "other": "B3"
+      }
+    },
+    {
+      "cell": "B3",
+      "name": "Jordan",
+      "profession": "Journalist",
+      "status": "CRIMINAL",
+      "clue": {
+        "type": "EXACTLY",
+        "k": 1,
+        "region": {
+          "type": "EXPLICIT",
+          "cells": [
+            "B3",
+            "C3"
+          ]
+        }
+      }
+    },
+    {
+      "cell": "C3",
+      "name": "Kai",
+      "profession": "Keeper",
+      "status": "INNOCENT",
+      "clue": {
+        "type": "DIFFERENT",
+        "target": "C3",
+        "other": "D3"
+      }
+    },
+    {
+      "cell": "D3",
+      "name": "Logan",
+      "profession": "Librarian",
+      "status": "CRIMINAL",
+      "clue": {
+        "type": "EXACTLY",
+        "k": 1,
+        "region": {
+          "type": "EXPLICIT",
+          "cells": [
+            "D3",
+            "A4"
+          ]
+        }
+      }
+    },
+    {
+      "cell": "A4",
+      "name": "Morgan",
+      "profession": "Mechanic",
+      "status": "INNOCENT",
+      "clue": {
+        "type": "SAME",
+        "target": "A4",
+        "other": "B4"
+      }
+    },
+    {
+      "cell": "B4",
+      "name": "Noel",
+      "profession": "Nurse",
+      "status": "INNOCENT",
+      "clue": {
+        "type": "EXACTLY",
+        "k": 1,
+        "region": {
+          "type": "EXPLICIT",
+          "cells": [
+            "B4",
+            "C4"
+          ]
+        }
+      }
+    },
+    {
+      "cell": "C4",
+      "name": "Oakley",
+      "profession": "Optician",
+      "status": "CRIMINAL",
+      "clue": {
+        "type": "EXACTLY",
+        "k": 1,
+        "region": {
+          "type": "INTERSECTION",
+          "regions": [
+            {
+              "type": "BOUNDARY"
+            },
+            {
+              "type": "EXPLICIT",
+              "cells": [
+                "C4",
+                "D4"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cell": "D4",
+      "name": "Parker",
+      "profession": "Pilot",
+      "status": "INNOCENT",
+      "clue": {
+        "type": "FACT",
+        "target": "A1",
+        "status": "CRIMINAL"
+      }
+    }
+  ],
+  "initially_revealed": [
+    "A1"
+  ]
+}

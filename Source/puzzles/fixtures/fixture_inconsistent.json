@@ -1,0 +1,54 @@
+{
+  "id": "fixture_inconsistent",
+  "title": "Inconsistent Fixture",
+  "size": 2,
+  "characters": [
+    {
+      "cell": "A1",
+      "name": "Avery",
+      "profession": "Architect",
+      "status": "CRIMINAL",
+      "clue": {
+        "type": "FACT",
+        "target": "A1",
+        "status": "CRIMINAL"
+      }
+    },
+    {
+      "cell": "B1",
+      "name": "Blake",
+      "profession": "Baker",
+      "status": "INNOCENT",
+      "clue": {
+        "type": "FACT",
+        "target": "A1",
+        "status": "INNOCENT"
+      }
+    },
+    {
+      "cell": "A2",
+      "name": "Casey",
+      "profession": "Chemist",
+      "status": "CRIMINAL",
+      "clue": {
+        "type": "FACT",
+        "target": "A1",
+        "status": "CRIMINAL"
+      }
+    },
+    {
+      "cell": "B2",
+      "name": "Devon",
+      "profession": "Doctor",
+      "status": "INNOCENT",
+      "clue": {
+        "type": "FACT",
+        "target": "A1",
+        "status": "INNOCENT"
+      }
+    }
+  ],
+  "initially_revealed": [
+    "A1"
+  ]
+}

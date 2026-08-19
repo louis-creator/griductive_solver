@@ -1,0 +1,26 @@
+Verification date: 2026-08-19
+Python: 3.14.4 (project supports Python 3.11+)
+
+Command: python -m pytest -q
+Result: 56 passed in 0.31s
+
+Command: python -m experiments.validate_puzzles
+Result: 10/10 normal puzzles schema-valid, all clues true, UNIQUE, and Auto Solve SOLVED.
+
+Command: python -m experiments.benchmark
+Result: 10/10 cases SOLVED; CSV/JSON, representative trace, and DPLL showcase trace generated.
+
+DPLL showcase regression:
+- `3x3_dpll_showcase_01`: SOLVED, 7 steps, 21 SAT calls, 1 decision, 129 propagations,
+  and 1 backtrack. Automated test requires both Decisions and Backtracks to remain greater than zero.
+
+Enhanced GUI smoke verification:
+- 3x3 responsive render, pencil marks/public-state isolation, NOT_PROVABLE, CONTRADICTED,
+  ACCEPTED, clue spotlight, two-stage Hint, Restart, and Auto Solve: PASS
+- 4x4 responsive render, Next Fixed Case, fixed JSON reload, and progressive Auto Solve: PASS
+- Layout regression at default 1200x690, compact 1024x640, and maximized: PASS; action bar remained
+  inside the visible client area and no card child overflowed its bounds.
+- DPI/card typography regression at 960x620, 1024x640, and 1200x690: PASS; Windows HiDPI scale
+  detected and applied before card text rendering, with no card overflow.
+- High-DPI corner-label measurement: PASS. Left title 202/214 px, left introduction 198/214 px,
+  and right title 265/280 px requested/available, so no leading or trailing glyph is clipped.

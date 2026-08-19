@@ -1,0 +1,55 @@
+Step 1
+Active clues: CLUE_A1, CLUE_A3
+Target: B1
+Test: KB AND B1=CRIMINAL
+Result: UNSAT
+Therefore: B1 = INNOCENT
+New clue revealed: CLUE_B1
+
+Step 2
+Active clues: CLUE_A1, CLUE_B1, CLUE_A3
+Target: C1
+Test: KB AND C1=CRIMINAL
+Result: UNSAT
+Therefore: C1 = INNOCENT
+New clue revealed: CLUE_C1
+
+Step 3
+Active clues: CLUE_A1, CLUE_B1, CLUE_C1, CLUE_A3
+Target: A2
+Test: KB AND A2=INNOCENT
+Result: UNSAT
+Therefore: A2 = CRIMINAL
+New clue revealed: CLUE_A2
+
+Step 4
+Active clues: CLUE_A1, CLUE_B1, CLUE_C1, CLUE_A2, CLUE_A3
+Target: B2
+Test: KB AND B2=INNOCENT
+Result: UNSAT
+Therefore: B2 = CRIMINAL
+New clue revealed: CLUE_B2
+
+Step 5
+Active clues: CLUE_A1, CLUE_B1, CLUE_C1, CLUE_A2, CLUE_B2, CLUE_A3
+Target: C2
+Test: KB AND C2=CRIMINAL
+Result: UNSAT
+Therefore: C2 = INNOCENT
+New clue revealed: CLUE_C2
+
+Step 6
+Active clues: CLUE_A1, CLUE_B1, CLUE_C1, CLUE_A2, CLUE_B2, CLUE_C2, CLUE_A3
+Target: B3
+Test: KB AND B3=INNOCENT
+Result: UNSAT
+Therefore: B3 = CRIMINAL
+New clue revealed: CLUE_B3
+
+Step 7
+Active clues: CLUE_A1, CLUE_B1, CLUE_C1, CLUE_A2, CLUE_B2, CLUE_C2, CLUE_A3, CLUE_B3
+Target: C3
+Test: KB AND C3=CRIMINAL
+Result: UNSAT
+Therefore: C3 = INNOCENT
+New clue revealed: CLUE_C3

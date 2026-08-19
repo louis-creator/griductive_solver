@@ -1,0 +1,123 @@
+{
+  "id": "3x3_binary_01",
+  "title": "Partners and Opposites",
+  "size": 3,
+  "characters": [
+    {
+      "cell": "A1",
+      "name": "Avery",
+      "profession": "Architect",
+      "status": "CRIMINAL",
+      "clue": {
+        "type": "SAME",
+        "target": "A1",
+        "other": "B1"
+      }
+    },
+    {
+      "cell": "B1",
+      "name": "Blake",
+      "profession": "Baker",
+      "status": "CRIMINAL",
+      "clue": {
+        "type": "DIFFERENT",
+        "target": "B1",
+        "other": "C1"
+      }
+    },
+    {
+      "cell": "C1",
+      "name": "Casey",
+      "profession": "Chemist",
+      "status": "INNOCENT",
+      "clue": {
+        "type": "SAME",
+        "target": "C1",
+        "other": "A2"
+      }
+    },
+    {
+      "cell": "A2",
+      "name": "Devon",
+      "profession": "Doctor",
+      "status": "INNOCENT",
+      "clue": {
+        "type": "DIFFERENT",
+        "target": "A2",
+        "other": "B2"
+      }
+    },
+    {
+      "cell": "B2",
+      "name": "Emery",
+      "profession": "Engineer",
+      "status": "CRIMINAL",
+      "clue": {
+        "type": "DIFFERENT",
+        "target": "B2",
+        "other": "C2"
+      }
+    },
+    {
+      "cell": "C2",
+      "name": "Finley",
+      "profession": "Florist",
+      "status": "INNOCENT",
+      "clue": {
+        "type": "DIFFERENT",
+        "target": "C2",
+        "other": "A3"
+      }
+    },
+    {
+      "cell": "A3",
+      "name": "Gray",
+      "profession": "Guide",
+      "status": "CRIMINAL",
+      "clue": {
+        "type": "DIFFERENT",
+        "target": "A3",
+        "other": "B3"
+      }
+    },
+    {
+      "cell": "B3",
+      "name": "Harper",
+      "profession": "Historian",
+      "status": "INNOCENT",
+      "clue": {
+        "type": "EXACTLY",
+        "k": 1,
+        "region": {
+          "type": "INTERSECTION",
+          "regions": [
+            {
+              "type": "BOUNDARY"
+            },
+            {
+              "type": "EXPLICIT",
+              "cells": [
+                "B3",
+                "C3"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cell": "C3",
+      "name": "Indigo",
+      "profession": "Illustrator",
+      "status": "CRIMINAL",
+      "clue": {
+        "type": "FACT",
+        "target": "A1",
+        "status": "CRIMINAL"
+      }
+    }
+  ],
+  "initially_revealed": [
+    "A1"
+  ]
+}
