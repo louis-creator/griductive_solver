@@ -1,4 +1,4 @@
-# Griductive Solver — CSC14003 Project 2
+# Griductive Solver 
 
 Griductive is a no-guess deduction game played on a grid of character cards. Every character is
 secretly either **Criminal** or **Innocent**, and every revealed clue is true. A verdict is accepted
